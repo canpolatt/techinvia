@@ -4,12 +4,14 @@
 //// VARIABLES
 
 :root {
-  --color-white: #ffffff;
+  --color-white: rgb(255, 255, 255, 0.92);
   --color-gunmental: #242f40;
   --color-max-yellow: #fcc666;
   --color-text: #363636;
   --color-middle-red: #fa8d70;
   --color-teal: #5b818d;
+  --color-card-text:#111456;
+  --color-card-social:#3C4C66;
   --text-linear: linear-gradient(
     90deg,
     #3c4c66 35.56%,
@@ -34,8 +36,18 @@
 //// RESPONSIVITY
 
 html {
+  height: 100%;
+  width: 100%;
   box-sizing: border-box;
-  font-size: 62.5%; // 1rem = 10px  
+  font-size: 62.5%; // 1rem = 10px
+
+  @include respond(small-phone) {
+    font-size: 16%;
+  }
+
+  @include respond(phone) {
+    font-size: 33%;
+  }
 
   @include respond(tab-land) {
     font-size: 56.25%; // 1rem= 9px
@@ -54,12 +66,18 @@ html {
 //// TYPOGRAPHY
 
 body {
+  height: 100%;
+  width: 100%;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
 
 h1,
 h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  &:hover {
+    color: var(--color-max-yellow);
+  }
 }
 
 h3 {
@@ -68,6 +86,10 @@ h3 {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-align: center;
+  @include respond(small-phone) {
+    font-size: 3.3rem;
+  }
 }
 
 h4 {
@@ -78,6 +100,15 @@ h5 {
   font-size: 2.4rem;
 }
 
+li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
 p {
   font-size: 1.7rem;
+  color: var(--color-text);
+  font-weight: 700;
 }

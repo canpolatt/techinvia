@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "DESIGN",
+    "header": "We assume karma exists",
+    "description": "Assume that doing the right things consistently will yield disproportionate rewards, even if you can’t always tell how that will happen.",
+    "image": "./assets/design_image.svg"
+  },
+  {
+    "id": 2,
+    "title": "DESIGN",
+    "header": "We assume karma exists",
+    "description": "Assume that doing the right things consistently will yield disproportionate rewards, even if you can’t always tell how that will happen.",
+    "image": "./assets/design_image.svg"
+  },
+  {
+    "id": 3,
+    "title": "DESIGN",
+    "header": "We assume karma exists",
+    "description": "Assume that doing the right things consistently will yield disproportionate rewards, even if you can’t always tell how that will happen.",
+    "image": "./assets/design_image.svg"
+  }
+]

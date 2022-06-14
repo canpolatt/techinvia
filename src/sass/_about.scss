@@ -1,0 +1,34 @@
+.about--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about--wrapper {
+  padding: 5rem 5rem;
+}
+
+.about--text {
+  font-weight: 500;
+  line-height: 50px;
+  @include respond(tab-port){
+    line-height: 40px;
+  }
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  max-width: 98rem;
+  padding: 5rem 0;
+}
+
+.about--image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about--image {
+  width: 80%;
+}

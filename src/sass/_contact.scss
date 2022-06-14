@@ -1,0 +1,47 @@
+.contact--container{
+    padding:5rem;
+}
+
+.contact--wrapper{
+    padding:5rem;
+    width:100%;
+    @include respond(small-phone){
+        padding:5rem 0;
+    }
+}
+
+.contact--input-container{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.contact--input::placeholder{
+    color:#BDBDBD;
+}
+
+.contact--input{
+    border: 0.3rem solid #002C71;
+    border-radius: 3rem;
+    height: 4.2rem;
+    width:70%;
+    padding:0 1.5rem;
+    @include respond(tab-port){
+        width:90%;
+    }
+    @include respond(small-phone){
+        width:100%;
+    }
+}
+
+.contact--button{
+    color:#002C71;
+    background:none;
+    border:none;
+    font-weight: bold;
+    position:absolute;
+    right:30%;
+    cursor:pointer;
+    font-size:1.5rem;
+}

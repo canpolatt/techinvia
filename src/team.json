@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Armağan Dalkıran",
+    "description": "Software Engineer @Trendyol",
+    "image": "images/team_image1.JPG",
+    "background":"linear-gradient(180deg, #4C9D80 0%, #FBB348 0.01%, #F5D264 100%)"
+  },
+  {
+    "id": 2,
+    "title": "Can Polat",
+    "description": "Software Engineer @BITES",
+    "image": "images/team_image3.JPG",
+    "background":"linear-gradient(180deg, #6681E1 0.01%, #33BED1 100%)"
+  },
+  {
+    "id": 3,
+    "title": "Deniz Yüce",
+    "description": "IOS Developer @Softtech",
+    "image": "images/team_image2.JPG",
+    "background":"linear-gradient(180deg, #E1B1F5 0.01%, #7896FF 100%)"
+  }
+]
