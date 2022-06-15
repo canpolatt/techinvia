@@ -1,17 +1,132 @@
 .services--container{
-    padding: 5rem;
+    padding: 5rem 0;
+    position:relative;
 }
+
+.services--stage{
+    padding:3rem;
+    position:absolute;
+    top:14%;
+    left:50%;
+    transform:translate(-50%);
+    li{
+        color:#696969;
+        font-size:3rem;
+        padding:1rem;
+    }
+    font-weight:bold;
+    display:flex;
+}
+
+.services--active-stage{
+    color:#111456 !important;
+}
+
+
 
 // .services--container::-webkit-scrollbar{
 //     width:100px;
 // }
 
-// .services--wrapper{
-//     height:100vw;
-//     overflow-x:auto;
-//     scroll-snap-type:x mandatory;
-// }
+.services--wrapper{
+    height:100vh;
+    width:100vw;
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 100%;
+    transform:translateX(0vw);
+    transition:500ms ease-in-out;
+}
 
+.service--container{
+    grid-template-rows: min-content;
+    scroll-snap-align:start;
+    position:relative;
+    margin:5rem;
+    @include respond(tab-land){
+        margin:2rem;
+    }
+}
+
+.service--wrapper{
+    padding:5rem 15rem;
+    @include respond(tab-land){
+        padding:2rem;
+    }
+    height:100%;
+    display:flex;
+    align-items:center;
+    @include respond(tab-land){
+        flex-direction: column;
+    }
+    h2{
+        font-size:3rem;
+        font-weight: 800;
+        padding:5rem 0;
+    }
+    p{
+        color:#363636;
+        max-width:50rem;
+    }
+}
+.service--text{
+    flex:1;
+    height:100%;
+    @include respond(tab-land){
+        height:70%;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    @include respond(phone){
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+
+}
+.service--image{
+    flex:1;
+    height:90%;
+    @include respond(tab-land){
+        width:60%;
+    }
+    @include respond(phone){
+        width:100%;
+    }
+}
+
+.service--before{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    button{
+        border:none;
+        background:none;
+        color:white;
+        background-color:white;
+    }
+}
+
+.service--next{
+    position: absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    button{
+        border:none;
+        background:none;
+        color:white;
+        background-color:white;
+    }
+}
+
+.service--button-image{
+    width:3rem;
+    cursor:pointer;
+}
 // .services--wrapper::-webkit-scrollbar{
 //     display:none;
 // }

@@ -6,11 +6,12 @@ import Team from "./pages/team";
 import Contact from "./pages/contact";
 import Footer from "./components/footer";
 
+
 const App = () => {
   return (
     <>
-      <Navbar />
-      <main>
+      <Navbar/>
+      <main className="wrapper">
         <Home />
         <About/>
         <Services/>

@@ -72,6 +72,15 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper{
+  overflow-x:hidden;
+  position:relative;
+}
+
+.disable-overflow{
+  overflow:hidden;
+}
+
 h1,
 h2 {
   font-size: 1rem;
