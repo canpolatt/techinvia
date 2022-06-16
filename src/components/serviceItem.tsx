@@ -22,7 +22,7 @@ const ServiceItem = ({
   viewPort,
   setViewPort,
 }: ServiceProps) => {
-  const changeSlide = (id: number, prev: boolean, next: boolean) => {
+  const changeSlide = (id: number = 0, prev: boolean = false, next: boolean = false) => {
     console.log(id);
     if (prev && id !== 1) {
       setViewPort((prev) => prev + 100);
